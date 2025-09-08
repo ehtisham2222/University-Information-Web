@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUST University</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family:'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(90deg, #0047ab, #005ecb);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: #005ecb;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #004080;
+        }
+
+        /* Content Styles */
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f5f9ff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0047ab;
+            border-bottom: 3px solid #0047ab;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin: 5px 0;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0047ab;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e6f2ff;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #0047ab;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NUST University</h1>
+    </header>
+
+    <nav>
+        <a href="#admissions">Admissions</a>
+        <a href="#fees">Fee Structure</a>
+        <a href="#campus">Campus Life</a>
+        <a href="#departments">Departments</a>
+        <a href="#Enrolled">Enrolled Students </a>
+        <a href="#Address">Address</a>
+        <a href="#Ranking">Ranking</a>
+    </nav>
+
+    <div class="content">
+          <section id="admissions">
+            <h2>Admissions</h2>
+            <p>NUST University offers admissions twice a year for both undergraduate and postgraduate programs. Currently, admissions are open for the following programs:</p>
+            <ul>
+                <li>Bachelor of Engineering in Electrical</li>
+                <li>Bachelor of Engineering in Mechanical</li>
+                <li>Bachelor of Computer Science</li>
+                <li>Master of Data Science</li>
+                <li>Master of Business Administration (MBA)</li>
+                <li>PhD in Robotics and Artificial Intelligence</li>
+            </ul>
+            <p>Below are the steps to apply:</p>
+            <ol>
+                <li>Visit the official website and create an account.</li>
+                <li>Fill out the online application form with accurate details.</li>
+                <li>Upload the required documents, including academic transcripts and ID proof.</li>
+                <li>Pay the application processing fee.</li>
+                <li>Schedule and appear for the admission test (if applicable).</li>
+                <li>Await the final merit list and offer letter.</li>
+            </ol>
+            <p>For detailed requirements and application deadlines, click <a href="https://ugadmissions.nust.edu.pk/" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="fees">
+            <h2>Fee Structure</h2>
+            <p>The tuition fees at NUST University vary by program. Below is a sample fee structure:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th>Tuition Fee (PKR per Semester)</th>
+                        <th>Additional Charges</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bachelor of Electrical Engineering</td>
+                        <td>124,200</td>
+                        <td>Admission Processing fee: 35,000</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Computer Science</td>
+                        <td> 124,200</td>
+                        <td>Security Deposit (Refundable): 10,000</td>
+                    </tr>
+                    <tr>
+                        <td>Master of Data Science</td>
+                        <td>88,500</td>
+                        <td>Miscellaneous Charges: 2700</td>
+                    </tr>
+                    <tr>
+                        <td>PhD in Aerospace Engineering</td>
+                        <td>88,500</td>
+                        <td>Security Deposit (Refundable): 10,000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Scholarships and financial aid options are also available. For more details, click <a href="https://nust.edu.pk/admissions/fee-structure/" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="campus">
+            <h2>Campus Life</h2>
+            <p>NUST University’s campuses are renowned for their state-of-the-art facilities, vibrant student societies, and modern research centers. Students enjoy a diverse environment that encourages both academic excellence and extracurricular engagement. From technical clubs to cultural events, there’s something for everyone. Learn more about campus life <a href="https://campuslife.nust.edu.pk/" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="departments">
+            <h2>Departments</h2>
+            <p>NUST University has the following departments:
+                <ul>
+                    <li><strong>Engineering:</strong> Programs in Electrical, Mechanical, Civil, and Environmental Engineering.</li>
+                    <li><strong>Computer Science:</strong> Specializing in AI, Data Science, and Software Engineering.</li>
+                    <li><strong>Business Administration:</strong> Focused on Finance, Marketing, and Strategic Management.</li>
+                    <li><strong>Natural Sciences:</strong> Including Physics, Mathematics, and Chemistry.</li>
+                </ul>
+            </p>
+            <p>For the complete list of departments and their offerings, click <a href="https://nust.edu.pk/admissions/undergraduates/list-of-ug-programmes-and-institutions/" target="_blank">here</a>.</p>
+        </section>
+        <section id="Enrolled">
+            <h2> Enrolled Students</h2>
+            <p>In this year NUST (National University of Sciences and Technology) in Islamabad has over <strong>18,000</strong>  students enrolled. </p>
+        </section>
+        <section id="Address">
+            <h2>Address</h2>
+            <p><strong>National University of Sciences & Technology (NUST) Campus, Sector H-12, Islamabad, Pakistan</strong>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2772.2420692241194!2d72.9921839!3d33.644187599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9675aaaaaaab%3A0xc5180922c44eb86b!2sNational%20University%20of%20Sciences%20%26%20Technology!5e1!3m2!1sen!2s!4v1742459061033!5m2!1sen!2s" width="600" height="450" style="border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="Ranking">
+            <h2> Ranking</h2>
+            <p>In the QS World University Rankings 2025, NUST is ranked <strong>#353 globally</strong> . This makes it the <strong> #1 university</strong> in Pakistan according to this ranking.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 NUST University. All rights reserved.</p>
+    </footer>
+</body>
+</html>

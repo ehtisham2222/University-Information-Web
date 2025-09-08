@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST University</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(90deg, #0047ab, #005ecb);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: #005ecb;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #005ecb;
+        }
+
+        /* Content Styles */
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f5f9ff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0047ab;
+            border-bottom: 3px solid #0047ab;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin: 5px 0;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0047ab;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e6f2ff;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #0047ab;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FAST University</h1>
+    </header>
+
+    <nav>
+        <a href="#admissions">Admissions</a>
+        <a href="#fees">Fee Structure</a>
+        <a href="#campus">Campus Life</a>
+        <a href="#departments">Departments</a>
+        <a href="#Enrolled">Enrolled Students</a>
+        <a href="#Address">Address</a>
+        <a href="#Ranking">Ranking</a>
+    </nav>
+
+    <div class="content">
+          <section id="admissions">
+            <h2>Admissions</h2>
+            <p>FAST University offers admissions twice a year for both undergraduate and postgraduate programs. Currently, admissions are open for the following programs:</p>
+            <ul>
+                <li>Bachelor of Computer Science</li>
+                <li>Bachelor of Software Engineering</li>
+                <li>Bachelor of Artificial Intelligence</li>
+                <li>Bachelor of Electrical Engineering</li>
+                <li>Master of Business Administration (MBA)</li>
+                <li>Master of Computer Science</li>
+                <li>PhD in Computer Science</li>
+            </ul>
+            <p>Below are the steps to apply:</p>
+            <ol>
+                <li>Visit the official website and create an account.</li>
+                <li>Fill out the online application form with accurate details.</li>
+                <li>Upload the required documents, including academic transcripts and ID proof.</li>
+                <li>Pay the application processing fee.</li>
+                <li>Schedule and appear for the admission test (if applicable).</li>
+                <li>Await the final merit list and offer letter.</li>
+            </ol>
+            <p>For detailed requirements and application deadlines, click <a href="https://www.nu.edu.pk/Admissions/HowToApply" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="fees">
+            <h2>Fee Structure</h2>
+            <p>The tuition fees at FAST University vary by program. Below is a sample fee structure:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th>Tuition Fee (PKR per Semester)</th>
+                        <th>Additional Charges</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bachelor of Computer Science</td>
+                        <td>160,000</td>
+                        <td>Admission Fee: 20,000</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Electrical Engineering</td>
+                        <td>160,000</td>
+                        <td>Security Deposit: 20,000</td>
+                    </tr>
+                    <tr>
+                        <td>Master of Business Administration</td>
+                        <td>190,000 – 200,000</td>
+                        <td>Student Activities Fund : 2,000</td>
+                    </tr>
+                    <tr>
+                        <td>PhD in Computer Science</td>
+                        <td>200,000 – 210,000</td>
+                        <td>Applicant Admission  Fee: 3,000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Scholarships and financial aid options are also available. For more details, click <a href="https://www.nu.edu.pk/Admissions/FeeStructure" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="campus">
+            <h2>Campus Life</h2>
+            <p>FAST University’s campuses offer a vibrant and inclusive environment, fostering academic excellence and personal growth. With state-of-the-art facilities, modern classrooms, and well-equipped labs, students are provided with the best resources. Extracurricular activities, such as sports events, cultural festivals, and tech competitions, ensure a well-rounded campus life. The university also organizes workshops, seminars, and networking events to connect students with industry professionals. Learn more about campus life <a href="https://www.nu.edu.pk/QEC/PhotoGallery" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="departments">
+            <h2>Departments</h2>
+            <p>FAST University has the following departments:
+                <ul>
+                    <li><strong>Computer Science:</strong> Offering programs in AI, Data Science, and Software Engineering.</li>
+                    <li><strong>Electrical Engineering:</strong> Specializing in Power, Electronics, and Telecommunications.</li>
+                    <li><strong>Business Administration:</strong> Providing majors in Finance, Marketing, and Management.</li>
+                    <li><strong>Mathematics:</strong> Focused on Applied and Pure Mathematics.</li>
+                </ul>
+            </p>
+            <p>For the complete list of departments and their offerings, click <a href="https://www.nu.edu.pk/Admissions/ProgramOffered" target="_blank">here</a>.</p>
+        </section>
+        <section id="Enrolled">
+            <h2> Enrolled Students </h2>
+            <p> While precise enrollment numbers for the FAST Islamabad campus in 2025 are not readily available, the university, which has five campuses, generally enrolls around <strong>11,000 </strong> to <strong>
+            13,000</strong> students across all campuses </p> 
+            
+        </section>
+        <section id="Address">
+            <h2> Address</h2>
+            <p><strong>FAST University, 3 A.K. Brohi Road, H-11/4 H 11/4 H-11, Islamabad,Pakistan</strong></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2771.8443246038155!2d73.0153768!3d33.6565377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbe1faaaaaaab%3A0x223386a2985e88f4!2sFAST%20NUCES%2C%20Islamabad%20Campus!5e1!3m2!1sen!2s!4v1742458453278!5m2!1sen!2s" width="600" height="450" style="border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="Ranking">
+            <h2>Ranking</h2>
+            <p> In the QS World University Rankings 2025, FAST National University of Computer and Emerging Sciences (FAST NUCES) in Islamabad, Pakistan, is ranked <strong>401-450</strong> globally. The university also holds a rank of <strong>1001-1200 </strong>in the Times Higher Education World University Rankings 2025. And Fast University Islamabad rank in Pakistan is <strong>#4</strong>.</p>
+        </section>
+            
+    </div>
+
+    <footer>
+        <p>&copy; 2025 FAST University. All rights reserved.</p>
+    </footer>
+</body>
+</html>

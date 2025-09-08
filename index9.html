@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Information Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            background-image: url('test3.jpg');
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color: #0047ab;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .navbar nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar nav a:hover {
+            background-color: #00337f;
+        }
+         
+        
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-bar select {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #ffaa00;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .university-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .university {
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            cursor: pointer;
+            background-color:#f2f2f2;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .university img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .university h3 {
+            margin: 10px 0;
+        }
+
+        .university:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #0047ab;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+       
+
+        @media (max-width: 768px) {
+            .university-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .university {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+               <h1>University Information Web</h1>
+        <div class="search-bar">
+            <select id="university-select">
+                <option value="" disabled selected>Select a University</option>
+                <option value="https://iqra.edu.pk">Iqra University</option>
+                <option value="https://www.nu.edu.pk/">FAST University</option>
+                <option value="https://numl.edu.pk">NUML University</option>
+                <option value="https://nust.edu.pk/">NUST University</option>
+                <option value="https://qau.edu.pk">Quaid-e-Azam University</option>
+                <option value="https://pu.edu.pk">Punjab University</option>
+                <option value="https://ucp.edu.pk">University of Central Punjab</option>
+                <option value="https://uog.edu.pk">University of Gujrat</option>
+                <option value="https://su.edu.pk/">University of Sargodha</option>
+                <option value="https://gcuf.edu.pk">GC University Faisalabad</option>
+                <option value="https://fuuastisb.edu.pk">Federal Urdu University</option>
+                <option value="https://lums.edu.pk">LUMS</option>
+                <option value="https://www.bnu.edu.pk">Beaconhouse National University</option>
+                <option value="http://www.uob.edu.pk">University of Balochistan</option>
+                <option value="http://www.uop.edu.pk">University of Peshawar</option>
+                <option value="https://www.usindh.edu.pk">University of Sindh</option>
+                <option value="https://www.comsats.edu.pk">COMSATS University</option>
+                <option value="https://www.uaar.edu.pk">PMAS Arid Agriculture University</option>
+                <option value="https://cust.edu.pk">Capital University of Science and Technology</option>
+                <option value="https://szabist-isb.edu.pk">SZABIST</option>
+                <option value="https://iiui.edu.pk">IIUI</option>
+                <option value="https://www.iub.edu.pk">Islamia University Bahawalpur</option>
+                <option value="https://www.kfueit.edu.pk">Khwaja Fareed University</option>
+                <option value="https://riphah.edu.pk/">Riphah International University</option>
+                <option value="https://www.superior.edu.pk/">Superior University</option>
+            </select>
+            <button onclick="redirectToUniversity()">Go</button>
+        </div>
+        <nav>
+            <a href="index9.html">Home</a>
+            <a href="about11.html">About</a>
+            <a href="contactus22.html">Contact</a>
+            <a href="review.html">Review</a>
+            <a href="form.html">Sign in</a> 
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="university-list">
+            <div class="university" onclick="redirectToPage('iqra.html')">
+                <img src="iqrauni.jpg" alt="Iqra University">
+                <h3>Iqra University</h3>
+                <p>Explore admissions, fees, campus life, and departments.</p>
+            </div>
+            <div class="university" onclick="redirectToPage('fast.html')">
+                <img src="fast.png" alt="FAST University">
+                <h3>FAST University</h3>
+                <p>Explore admissions, fees, campus life, and departments.</p>
+            </div>
+            <div class="university" onclick="redirectToPage('numl.html')">
+                <img src="numl.jpg" alt="NUML University">
+                <h3>NUML University</h3>
+                <p>Explore admissions, fees, campus life, and departments.</p>
+            </div>
+            <div class="university" onclick="redirectToPage('nust.html')">
+                <img src="nust.jpg" alt="NUST University">
+                <h3>NUST University</h3>
+                <p>Explore admissions, fees, campus life, and departments.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 University Information Web. All rights reserved. | Powered by XAMPP & PHP</p>
+    </footer>
+
+    <script>
+        function redirectToUniversity() {
+            const universitySelect = document.getElementById('university-select');
+            const selectedUrl = universitySelect.value;
+
+            if (selectedUrl) {
+                window.open(selectedUrl, '_blank');
+            } else {
+                alert('Please select a university from the dropdown.');
+            }
+        }
+
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+

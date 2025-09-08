@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iqra University</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family:'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(90deg, #0047ab, #005ecb);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: #005ecb;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #005ecb;
+        }
+
+        /* Content Styles */
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f5f9ff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0047ab;
+            border-bottom: 3px solid #0047ab;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin: 5px 0;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0047ab;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e6f2ff;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #0047ab;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Iqra University</h1>
+    </header>
+
+    <nav>
+        <a href="#admissions">Admissions</a>
+        <a href="#fees">Fee Structure</a>
+        <a href="#campus">Campus Life</a>
+        <a href="#departments">Departments</a>
+        <a href="#Enrolled">Enrolled Students</a>
+        <a href="#Address">Address</a>
+        <a href="#Ranking">Ranking</a>
+    </nav>
+
+    <div class="content">
+          <section id="admissions">
+            <h2>Admissions</h2>
+            <p>Iqra University offers admissions twice a year for both undergraduate and postgraduate programs. Currently, admissions are open for the following programs:</p>
+            <ul>
+                <li>Bachelor of Computer Science</li>
+                <li>Bechelor of Software Engineeering</li>
+                <li>Bechelor of Artifical Intelligence</li>
+                <li>Bachelor of Media Studies</li>
+                <li>Bachelor of Feshion Designing </li>
+                <li>Master of Business Administration (MBA)</li>
+                <li>Master of Computer Science </li>
+                <li>PhD in Data Science</li>
+                
+            </ul>
+            <p>Below are the steps to apply:</p>
+            <ol>
+                <li>Visit the official website and create an account.</li>
+                <li>Fill out the online application form with accurate details.</li>
+                <li>Upload the required documents, including academic transcripts and ID proof.</li>
+                <li>Pay the application processing fee.</li>
+                <li>Schedule and appear for the admission test (if applicable).</li>
+                <li>Await the final merit list and offer letter.</li>
+            </ol>
+            <p>For detailed requirements and application deadlines, click <a href="https://iqra.edu.pk/admissions" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="fees">
+            <h2>Fee Structure</h2>
+            <p>The tuition fees at Iqra University vary by program. Below is a sample fee structure:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th>Tuition Fee (PKR per Semester)</th>
+                        <th>Additional Charges</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bachelor of Computer Science</td>
+                        <td>169,140</td>
+                        <td>Admisson Fee: 10,000</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Business Administration</td>
+                        <td>136,170</td>
+                        <td>Admission Fee: 10,000</td>
+                    </tr>
+                    <tr>
+                        <td>MS in Internation Relation(IR)</td>
+                        <td>103,620</td>
+                        <td>Thesis Fee: 15,000</td>
+                    </tr>
+                    <tr>
+                        <td>PhD in Computer Science </td>
+                        <td>86,880</td>
+                        <td>Admission Fee: 12,000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Scholarships and financial aid options are also available. For more details, click <a href="https://iqra.edu.pk/programs" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="campus">
+            <h2>Campus Life</h2>
+            <p>Iqra University’s campuses offer a dynamic and inclusive environment, fostering both academic and personal growth. Modern classrooms and well-equipped labs provide students with the best resources to excel in their fields. Beyond academics, the campus boasts a wide range of extracurricular activities, from sports tournaments to cultural festivals, ensuring a vibrant student life. Additionally, the university hosts regular workshops and networking events, connecting students with industry leaders and professionals. Learn more about the vibrant campus life <a href="https://iqra.edu.pk/life-at-iu" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="departments">
+            <h2>Departments</h2>
+            <p>The university has a wide range of departments, including:
+                <ul>
+                    <li><strong>Computer Science:</strong> Specializing in AI, Data Science, and Software Engineering.</li>
+                    <li><strong>Business Administration:</strong> Offering majors in Finance, Marketing, and HR.</li>
+                    <li><strong>Fashion Design:</strong> Known for its innovative and creative curriculum.</li>
+                    <li><strong>Media Sciences:</strong> Providing hands-on training in journalism and media production.</li>
+                    <li><strong>Education:</strong> Preparing future educators with modern teaching methodologies.</li>
+                    <li><strong>Engineering:</strong> Focused on Electrical, Electronics, and Telecommunications.</li>
+                </ul>
+            </p>
+            <p>For the complete list of departments and their offerings, click <a href="https://iqra.edu.pk/faculties" target="_blank">here</a>.</p>
+        </section>
+         <section id="Enrolled">
+            <h2> Enrolled Students </h2>
+            <p> Iqra University, with its main campus in Karachi, has approximately <strong>5,000 </strong>students enrolled, and it also has six campuses in Karachi and one in Islamabad. </p> 
+            
+        </section>
+        <section id="Address">
+            <h2> Address</h2>
+            <p> <strong>Road Shaheed-e-Millat Rd, Phase 2 Defence View Housing Society, Karachi,Pakistan </strong></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.973148151203!2d67.0823143!3d24.839574899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33d3d62c8d0db%3A0x7e55e236d13b6052!2sIqra%20University%20-%20Main%20Campus!5e1!3m2!1sen!2s!4v1742456853701!5m2!1sen!2s" width="600" height="450" 
+            style="border-radius:8px"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+        </section>
+        <section id="Ranking">
+            <h2>Ranking</h2>
+            <p>In 2025, Iqra University (IU) is ranked <strong> #1 </strong> in Pakistan for Business Studies by the Higher Education Commission (HEC). Globally, it's ranked <strong> #551-580 </strong> in the QS WUR Ranking By Subject and  <strong>#1001-1020 </strong> in the QS Sustainability Ranking. In the Asian University Rankings, it is ranked  <strong>#411-420</strong>.
+            </p> 
+            
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Iqra University. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

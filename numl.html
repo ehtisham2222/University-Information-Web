@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUML University</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+             background: linear-gradient(90deg, #0047ab, #005ecb);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+             background-color: #005ecb;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #005ecb;
+        }
+
+        /* Content Styles */
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f5f9ff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+             color: #0047ab;
+            border-bottom: 3px solid #0047ab;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin: 5px 0;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0047ab;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e6f2ff;
+        }
+
+        /* Footer Styles */
+        footer {
+              background-color: #0047ab;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NUML University</h1>
+    </header>
+
+    <nav>
+        <a href="#admissions">Admissions</a>
+        <a href="#fees">Fee Structure</a>
+        <a href="#campus">Campus Life</a>
+        <a href="#departments">Departments</a>
+        <a href="#Enrolled">Enrolled Students </a>
+        <a href="#Address">Address</a>
+        <a href="#Ranking">Ranking</a>
+    </nav>
+
+    <div class="content">
+          <section id="admissions">
+            <h2>Admissions</h2>
+            <p>NUML University offers admissions twice a year for both undergraduate and postgraduate programs. Currently, admissions are open for the following programs:</p>
+            <ul>
+                <li>Bachelor of English Literature</li>
+                <li>Bachelor of International Relations</li>
+                <li>Bachelor of Computer Science</li>
+                <li>Master of Applied Linguistics</li>
+                <li>Master of Business Administration (MBA)</li>
+                <li>PhD in Linguistics</li>
+            </ul>
+            <p>Below are the steps to apply:</p>
+            <ol>
+                <li>Visit the official website and create an account.</li>
+                <li>Fill out the online application form with accurate details.</li>
+                <li>Upload the required documents, including academic transcripts and ID proof.</li>
+                <li>Pay the application processing fee.</li>
+                <li>Schedule and appear for the admission test (if applicable).</li>
+                <li>Await the final merit list and offer letter.</li>
+            </ol>
+            <p>For detailed requirements and application deadlines, click <a href="https://numl.edu.pk/admissions" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="fees">
+            <h2>Fee Structure</h2>
+            <p>The tuition fees at NUML University vary by program. Below is a sample fee structure:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th>Tuition Fee (PKR per Semester)</th>
+                        <th>Additional Charges</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bachelor of English Literature</td>
+                        <td>103,420</td>
+                        <td>Library Subscription: 932</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Computer Science</td>
+                        <td>128,200</td>
+                        <td>Maintenance Charges: 3,300</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Psychology</td>
+                        <td>84,580</td>
+                        <td>Sports Fund:550</td>
+                    </tr>
+                    <tr>
+                        <td>Certificate in Korean</td>
+                        <td>31,950</td>
+                        <td>Magazine Fund :220</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Scholarships and financial aid options are also available. For more details, click <a href="https://www.numl.edu.pk/admission/fee" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="campus">
+            <h2>Campus Life</h2>
+            <p>NUML University’s campuses offer a multicultural and dynamic environment, fostering academic excellence and cross-cultural interaction. With modern classrooms, advanced labs, and vibrant student societies, students experience both academic and personal growth. Events such as cultural festivals, language days, and academic workshops add to the enriching campus experience. Learn more about campus life <a href="https://www.numl.edu.pk/gallery/all#" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="departments">
+            <h2>Departments</h2>
+            <p>NUML University has the following departments:
+                <ul>
+                    <li><strong>English:</strong> Offering programs in Literature, Linguistics, and Applied Linguistics.</li>
+                    <li><strong>Computer Science:</strong> Providing programs in Software Development, AI, and Data Science.</li>
+                    <li><strong>International Relations:</strong> Focused on Diplomacy, Global Politics, and Conflict Resolution.</li>
+                    <li><strong>Languages:</strong> Specializing in Chinese, Arabic, French, and more.</li>
+                </ul>
+            </p>
+            <p>For the complete list of departments and their offerings, click <a href="https://www.numl.edu.pk/#" target="_blank">here</a>.</p>
+        </section>
+        <section id="Enrolled">
+            <h2> Enrolled Students</h2>
+            <p>NUML, the National University of Modern Languages, has a student strength ranging between <strong>19,000</strong> and <strong>20,000</strong> students across all its campuses, including the main campus in Islamabad. </p>
+        </section>
+        <section id="Address">
+            <h2> Address</h2>
+            <p><strong>4 Khayaban-e-Johar, H 9/4 H-9, Islamabad,Pakistan</strong></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2771.543379084224!2d73.0502492!3d33.6658795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9570806ed9ed%3A0x894fbeb9e70954d4!2sNational%20University%20Of%20Modern%20Languages%20(NUML)!5e1!3m2!1sen!2s!4v1742458826826!5m2!1sen!2s" width="600" height="450" style="border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="Ranking">
+            <h2> Ranking</h2>
+            <P>In the QS World University Rankings 2025, the National University of Modern Languages (NUML) in Islamabad, Pakistan, is ranked <strong>#1401+</strong> Within Pakistan, NUML is ranked in the top 11 universities in terms of research excellence and is in the top 4 for business incubation centers. NUML also holds the <strong> #1 position </strong>in Pakistan for QS World Rankings in Languages and for sustainability targets SDG 7 and 13. </P>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 NUML University. All rights reserved.</p>
+    </footer>
+</body>
+</html>
